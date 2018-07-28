@@ -43,7 +43,7 @@ class Clock extends React.Component {
         </h5>        
         </header>                           
       </div>                  
-      <div class="w3-container">
+      <div class="w3-container w3-light-gray">
           <p>{this.state.time}</p>
           <img src={'https://www.countryflags.io/' + this.props.ISO + '/flat/64.png' }  />
       </div>

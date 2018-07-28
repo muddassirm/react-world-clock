@@ -12,7 +12,7 @@ const copyWebpackPlugin = new CopyWebpackPlugin([
 ])
 
 module.exports = {  
-  module: {    
+  module: {     
     rules: [
       {
         test: /\.js$/,
@@ -27,5 +27,9 @@ module.exports = {
       }
     ]
   },
-  plugins: [htmlWebpackPlugin,copyWebpackPlugin]
+  plugins: [htmlWebpackPlugin,copyWebpackPlugin],
+  output: {
+    path: path.build,
+    filename: "[name].[chunkhash].js",
+  }
 };
