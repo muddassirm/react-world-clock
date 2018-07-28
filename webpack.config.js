@@ -11,8 +11,7 @@ const copyWebpackPlugin = new CopyWebpackPlugin([
   {from:'src/css',to:'css'}
 ])
 
-module.exports = {
-  entry: path.join(__dirname, "dist/main.js"),
+module.exports = {  
   module: {    
     rules: [
       {

@@ -50,7 +50,7 @@ class App extends React.Component {
         return (
             <div className="w3-container">
                 <div>
-                    <p>
+                    <p> 
                         <select value={this.state.selectedClock} onChange={this.handleChange} >
                             {optionItems}
                         </select>

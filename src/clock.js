@@ -45,11 +45,12 @@ class Clock extends React.Component {
       </div>                  
       <div class="w3-container">
           <p>{this.state.time}</p>
+          <img src={'https://www.countryflags.io/' + this.props.ISO + '/flat/64.png' }  />
       </div>
       <footer class="w3-container w3-blue">
           <h5>{this.props.Timezone}</h5>                            
         </footer>
-      </div>     
+      </div>
       </div>
     );
   }
